@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# copies file(s) given as argument to file.YYMMDDhhmmss
+if (( $# < 1 )); then
+  echo "Usage: bkp <filename1> [filename2]"
+  exit 1
+fi
+
+for i in "$@"; do
+  cp -p $i $i.$(date +%y%m%d%H%M%S).bkp
+done

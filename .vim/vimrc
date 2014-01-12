@@ -1,0 +1,18 @@
+" pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
+set smartindent        " auto indent based on programming syntax
+set number             " enable line numbers
+set expandtab          " expand tab to spaces
+set tabstop=4          " tab size
+set shiftwidth=4       " indent size
+set background=dark    " adjust colors for dark background
+
+" shortcuts for tabs
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
+"autocmd FileType perl nnoremap _r :!perl %<CR>
+"autocmd BufNewFile,BufRead *.twig set filetype=html " html syntax for .twig

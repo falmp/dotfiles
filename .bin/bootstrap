@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for dotfile in .bin .vim .bashrc .inputrc .face
+do
+    ln -s ~/.dotfiles/${dotfile} ~
+done
