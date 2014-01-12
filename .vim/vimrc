@@ -3,16 +3,92 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-set smartindent        " auto indent based on programming syntax
-set number             " enable line numbers
+let mapleader=","
+
+set cursorline         " highlight cursor line
+set background=dark    " adjust colors for dark background
+set pastetoggle=<F2>   " toggle between paste mode
+set title              " set filename on title
+"set list               " show white characters
+
+set number             " use line numbers
+"set relativenumber     " use relative line numbers
+
 set expandtab          " expand tab to spaces
 set tabstop=4          " tab size
+set softtabstop=4      " soft tab size
 set shiftwidth=4       " indent size
-set background=dark    " adjust colors for dark background
+
+set smartindent        " indent based on programming syntax
+"set cindent           " indent based on c syntax
+
+set ignorecase         " search case-insensitive
+set smartcase          " only when everything is lowercase
+set hlsearch           " highlight searches
+"set wrapscan           " wrap from bottom to top
+"set gdefault           " global substitution by default
+
+" open new vertical split and switch over
+nnoremap <Leader>w <C-W>v<C-W>l
+
+" navigate around splits with <C-hjkl>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" use perlre on search
+nnoremap / /\v
+vnoremap / /\v
+
+" find matching brackets
+nnoremap <Tab> %
+vnoremap <Tab> %
 
 " shortcuts for tabs
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-"autocmd FileType perl nnoremap _r :!perl %<CR>
+" avoid f1 typo
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" avoid ; typo
+nnoremap ; :
+
+" exit insert mode (alternative to <C-]> and <C-C>)
+inoremap jj <ESC>
+
+" remove trailing whitespace
+nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
+
+" ack shortcut
+nnoremap <Leader>a :Ack 
+
+" fold tag
+nnoremap <Leader>ft Vatzf
+
+" re-hardwrap paragraphs of text
+nnoremap <Leader>q gqip
+
+" re-select just pasted text
+nnoremap <Leader>v V`]
+
+" edit vimrc
+nnoremap <Leader>ev <C-W><C-V><C-L>:edit $MYVIMRC<CR>
+
+" disable arrows to force hjkl
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
+
+"autocmd FocusLost * :wall " save on losing focus
+"autocmd FileType perl nnoremap _r :!perl %<CR>      " execute perl file
 "autocmd BufNewFile,BufRead *.twig set filetype=html " html syntax for .twig
+"nnoremap <Leader><Space> :nohlsearch<CR>            " disable search highlight (use <C-L>)
