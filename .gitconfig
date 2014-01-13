@@ -2,4 +2,11 @@
 	name = falmp
 	email = chico.lopes@gmail.com
 [push]
-	default = simple
+    default = simple
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
