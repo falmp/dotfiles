@@ -4,13 +4,15 @@
 
 ```
 git clone git://github.com/falmp/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 git submodule update --init
-~/.dotfiles/.bin/bootstrap
+.bin/bootstrap
 ```
 
 ## Update:
 
 ```
+cd ~/.dotfiles
 git pull
 git submodule update --init
 ```
