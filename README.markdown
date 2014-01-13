@@ -27,7 +27,7 @@ git commit -m "Install pathogen"
 git push
 ```
 
-## Uninstallation of a vim plugin:
+## Uninstallation of vim plugins:
 
 ```
 cd ~/.dotfiles
