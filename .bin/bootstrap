@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for dotfile in .bin .vim .bashrc .inputrc .face
+for dotfile in .bin .vim .bashrc .inputrc .face .gitconfig
 do
     ln -s ~/.dotfiles/${dotfile} ~
 done
