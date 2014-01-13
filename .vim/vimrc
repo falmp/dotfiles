@@ -5,9 +5,10 @@ call pathogen#helptags()
 
 let mapleader=","
 
-set cursorline          " highlight cursor line
 colorscheme molokai     " set color scheme
+
 set pastetoggle=<F2>    " toggle between paste mode
+set cursorline          " highlight cursor line
 set title               " set filename on title
 "set list                " show white characters
 
