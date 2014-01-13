@@ -4,6 +4,7 @@
 
 ```
 git clone git://github.com/falmp/dotfiles.git ~/.dotfiles
+git submodule update --init
 ~/.dotfiles/.bin/bootstrap
 ```
 
