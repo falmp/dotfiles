@@ -150,4 +150,4 @@ User="\u"
 Hostname="\h"
 
 # prompt
-PS1="$BGreen$User@$Hostname $BBlue$PathShort$BRed$(__git_ps1 ' [%s]')$Color_Off\$ "
+PS1="$BGreen$User@$Hostname $BBlue$PathShort$BRed"'$(__git_ps1 " [%s]")'"$Color_Off\$ "
