@@ -82,6 +82,12 @@ nnoremap <Leader>ev <C-W><C-V><C-L>:edit $MYVIMRC<CR>
 map <Leader>n :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif " open nerdtree on vim startup
 
+" syntastic
+let g:syntastic_auto_loc_list=1
+let g:syntastic_loc_list_height=3
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+
 " disable arrows to force hjkl
 "nnoremap <up> <nop>
 "nnoremap <down> <nop>
