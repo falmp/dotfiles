@@ -29,7 +29,7 @@ git push
 ```
 cd ~/.dotfiles
 git submodule deinit -f .vim/bundle/nerdtree
-git rm .vim/bundle/nerdtree # use --cached to keep files
+git rm -f .vim/bundle/nerdtree # use --cached instead to keep files
 git add .
 git commit -m "Uninstall nerdtree"
 git push
