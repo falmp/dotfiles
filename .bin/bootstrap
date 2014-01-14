@@ -2,5 +2,5 @@
 
 for dotfile in .bin .vim .bashrc .inputrc .face .gitconfig .subversion
 do
-    ln -s ~/.dotfiles/${dotfile} ~
+    ln -s -v -i --backup=t ~/.dotfiles/${dotfile} ~
 done
