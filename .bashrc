@@ -36,7 +36,7 @@ alias ..='cd ..'
 alias cd..='cd ..'
 alias psgrep='ps -ef | grep -v grep | grep -i'
 alias svn-incomming='svn diff -r BASE:HEAD --diff-cmd=meld'
-alias tcpflow-http='sudo tcpflow -C port 80 -i wlp2s0 -e'
+alias tcpflow-http='sudo tcpflow -C port 80 -i enp0s25 -e'
 alias diff='colordiff'
 
 # ex - archive extractor
