@@ -14,7 +14,7 @@ git submodule update --init
 ```
 cd ~/.dotfiles
 git pull
-git submodule update --init
+git submodule foreach git pull origin master
 ```
 
 ## Installation of vim plugins:
