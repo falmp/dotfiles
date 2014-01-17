@@ -95,8 +95,6 @@ let g:syntastic_warning_symbol='!'
 " airline (possible try https://github.com/itchyny/lightline.vim in the future)
 let g:airline_powerline_fonts=1 " needs to install powerline fonts
 let g:airline_theme='powerlineish'
-"let g:airline_theme="molokai"
-"let g:airline_theme="wombat"
 
 " tabular
 nmap <Leader>a= :Tabularize /=<CR>
