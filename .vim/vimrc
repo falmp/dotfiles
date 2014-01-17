@@ -79,6 +79,9 @@ nnoremap <Leader>v V`]
 " edit vimrc
 nnoremap <Leader>ev <C-W><C-V><C-L>:edit $MYVIMRC<CR>
 
+" enable undo on <C-W> (<C-U> is covered on sensible bundle)
+inoremap <C-W> <C-G>u<C-W>
+
 " nerdtree
 map <Leader>n :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif " open nerdtree on vim startup
