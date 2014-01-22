@@ -82,6 +82,8 @@ nnoremap <Leader>ev <C-W><C-V><C-L>:edit $MYVIMRC<CR>
 " enable undo on <C-W> (<C-U> is covered on sensible bundle)
 inoremap <C-W> <C-G>u<C-W>
 
+autocmd BufNewFile,BufRead *.wsdl set filetype=xml " xml syntax for .wsdl
+
 " nerdtree
 map <Leader>n :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif " open nerdtree on vim startup
@@ -118,5 +120,4 @@ vmap <Leader>a, :Tabularize /,<CR>
 
 "autocmd FocusLost * :wall " save on losing focus
 "autocmd FileType perl nnoremap _r :!perl %<CR>      " execute perl file
-"autocmd BufNewFile,BufRead *.twig set filetype=html " html syntax for .twig
 "nnoremap <Leader><Space> :nohlsearch<CR>            " disable search highlight (use <C-L>)
