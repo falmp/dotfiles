@@ -64,6 +64,9 @@ inoremap jj <ESC>
 " remove trailing whitespace
 nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
+" remove trailing ^M
+nnoremap <Leader>M :%s/\r//g<CR>
+
 " ack shortcut
 nnoremap <Leader>a :Ack 
 
