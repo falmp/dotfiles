@@ -85,7 +85,11 @@ nnoremap <Leader>ev <C-W><C-V><C-L>:edit $MYVIMRC<CR>
 " enable undo on <C-W> (<C-U> is covered on sensible bundle)
 inoremap <C-W> <C-G>u<C-W>
 
-autocmd BufNewFile,BufRead *.wsdl set filetype=xml " xml syntax for .wsdl
+" execute php file
+autocmd FileType php nnoremap <Leader>r :!php %<CR>
+
+" xml syntax for .wsdl
+autocmd BufNewFile,BufRead *.wsdl set filetype=xml
 
 " nerdtree
 map <Leader>n :NERDTreeToggle<CR>
