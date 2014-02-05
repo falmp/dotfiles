@@ -29,6 +29,8 @@ set hlsearch            " highlight searches
 set wrapscan            " wrap from bottom to top
 "set gdefault            " global substitution by default
 
+set showmatch           " show matching brackets
+
 " open new vertical split and switch over
 nnoremap <Leader>w <C-W>v<C-W>l
 
