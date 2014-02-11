@@ -93,6 +93,22 @@ autocmd FileType php nnoremap <Leader>r :!php %<CR>
 " xml syntax for .wsdl
 autocmd BufNewFile,BufRead *.wsdl set filetype=xml
 
+" toggle fold
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+
+" toggle or create fold
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
+
+" enable indent fold but still allow manual fold
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
+
 " nerdtree
 map <Leader>n :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif " open nerdtree on vim startup
