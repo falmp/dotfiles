@@ -1,5 +1,5 @@
 if [ -f /etc/bash_completion ]; then
-	    . /etc/bash_completion
+    . /etc/bash_completion
 fi
 
 xhost +local:root > /dev/null 2>&1
@@ -160,3 +160,7 @@ Hostname="\h"
 
 # prompt
 PS1="$BGreen$User@$Hostname $BBlue$PathShort$BRed"'$(__git_ps1 " [%s]")'"$Color_Off\$ "
+
+if [ -f $HOME/.bashrc.local ]; then
+    . $HOME/.bashrc.local
+fi
