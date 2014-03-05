@@ -72,7 +72,7 @@ ex ()
   fi
 }
 
-source /usr/share/git/git-prompt.sh
+. $HOME/.bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Reset
