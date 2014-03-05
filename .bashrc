@@ -38,7 +38,7 @@ alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --colo
 alias grep='grep --color=always -d skip'
 alias cp='cp -i'                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
-alias du='du -h'                          # human-readable sizes
+alias du='du -h'                          # human-readable sizes, use du -s * to summarize by directory
 alias free='free -m'                      # show sizes in MB
 alias less='less -R'
 alias ..='cd ..'
