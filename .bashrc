@@ -36,6 +36,8 @@ alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=au
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias grep='grep --color=always -d skip'
+alias pgrep='pgrep -a'
+alias hgrep='history | grep'
 alias cp='cp -i'                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias du='du -h'                          # human-readable sizes, use du -s * to summarize by directory
@@ -43,7 +45,6 @@ alias free='free -m'                      # show sizes in MB
 alias less='less -R'
 alias ..='cd ..'
 alias cd..='cd ..'
-alias psgrep='ps -ef | grep -v grep | grep -i'
 alias svn-incomming='svn diff -r BASE:HEAD --diff-cmd=meld'
 alias tcpflow-http='sudo tcpflow -C port 80 -i enp0s25 -e'
 alias diff='colordiff'
