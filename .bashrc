@@ -45,6 +45,8 @@ alias free='free -m'                      # show sizes in MB
 alias less='less -R'
 alias ..='cd ..'
 alias cd..='cd ..'
+alias ff='find . -name'
+alias ffi='find . -iname'
 alias svn-incomming='svn diff -r BASE:HEAD --diff-cmd=meld'
 alias tcpflow-http='sudo tcpflow -C port 80 -i enp0s25 -e'
 alias diff='colordiff'
