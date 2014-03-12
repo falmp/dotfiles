@@ -50,3 +50,6 @@
 [submodule ".vim/bundle/ragtag"]
 	path = .vim/bundle/ragtag
 	url = https://github.com/tpope/vim-ragtag.git
+[submodule ".vim/bundle/rooter"]
+	path = .vim/bundle/rooter
+	url = https://github.com/airblade/vim-rooter.git
