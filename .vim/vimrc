@@ -113,7 +113,7 @@ vnoremap <Space> zf
 
 " nerdtree
 map <Leader>n :NERDTreeToggle<CR>
-autocmd vimenter * if !argc() | NERDTree | endif " open nerdtree on vim startup
+"autocmd vimenter * if !argc() | NERDTree | endif " open nerdtree on vim startup
 
 " syntastic
 let g:syntastic_auto_loc_list=1
