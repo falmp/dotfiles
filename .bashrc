@@ -46,13 +46,17 @@ alias less='less -R'
 alias ..='cd ..'
 alias cd..='cd ..'
 alias ff='find . -name'
-alias ffi='find . -iname'
+alias vi='vim'
 alias svn-incomming='svn diff -r BASE:HEAD --diff-cmd=meld'
 alias tcpflow-http='sudo tcpflow -C port 80 -i enp0s25 -e'
 alias diff='colordiff'
 
+# ffv - find file and vim edit
+ffv () {
+    vim -p $( ff $1 );
+}
+
 # ex - archive extractor
-# usage: ex <file>
 ex ()
 {
   if [ -f $1 ] ; then
