@@ -6,15 +6,15 @@ xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
 
-shopt -s cdspell
-shopt -s checkwinsize
-shopt -s cmdhist
-shopt -s dotglob
-shopt -s expand_aliases
-shopt -s extglob
-shopt -s histappend
-shopt -s hostcomplete
-shopt -s nocaseglob
+shopt -s cdspell         # fix typos
+shopt -s checkwinsize    # update LINES and COLUMNS
+shopt -s cmdhist         # save multiple-line commands as one history entry
+shopt -s dotglob         # include dotfiles in pathname expansion
+shopt -s expand_aliases  # expand aliases
+shopt -s extglob         # extended pattern matching in pathname expansion
+shopt -s histappend      # append to history
+shopt -s hostcomplete    # autocomplete hostnames
+shopt -s nocaseglob      # case-insensitive in pathname expansion
 
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
