@@ -4,11 +4,13 @@
 [push]
     default = simple
 [alias]
-    st = status
+    st = status -sb
     ci = commit
     br = branch
     co = checkout
     df = diff
     dc = diff --cached
-    lg = log -p
+    le = log -p
+    lg = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%cn%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lr = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%cn%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --since=yesterday
     who = shortlog -s --
