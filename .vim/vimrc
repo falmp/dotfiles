@@ -72,7 +72,7 @@ nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 nnoremap <Leader>M :%s/\r//g<CR>
 
 " ack shortcut
-nnoremap <Leader>a :Ack 
+nnoremap <Leader>a :Ack
 
 " fold tag
 nnoremap <Leader>ft Vatzf
