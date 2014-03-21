@@ -14,3 +14,5 @@
     lg = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%cn%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
     lr = log --graph --pretty=format:'%Cred%h%Creset - %Cblue%cn%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --since=yesterday
     who = shortlog -s --
+    revert = checkout --
+    unadd = reset HEAD
