@@ -55,6 +55,7 @@ alias diff='colordiff'
 alias color='pygmentize -g'
 alias json='python -m json.tool'
 alias xml='xmllint --format -'
+alias nl='nl -ba -w3 -s" "'
 
 # ffv - find file and vim edit
 ffv () {
