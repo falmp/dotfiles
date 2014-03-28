@@ -52,6 +52,9 @@ alias vi='vim'
 alias svn-incomming='svn diff -r BASE:HEAD --diff-cmd=meld'
 alias tcpflow-http='sudo tcpflow -C port 80 -i enp0s25 -e'
 alias diff='colordiff'
+alias color='pygmentize -g'
+alias json='python -m json.tool'
+alias xml='xmllint --format -'
 
 # ffv - find file and vim edit
 ffv () {
