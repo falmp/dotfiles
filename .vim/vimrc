@@ -123,7 +123,7 @@ let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='!'
 
 " airline (possible try https://github.com/itchyny/lightline.vim in the future)
-let g:airline_powerline_fonts=1 " needs to install powerline fonts
+let g:airline_powerline_fonts=1 " needs to install ttf-powerline-fonts-git
 let g:airline_theme='powerlineish'
 
 " tabular
