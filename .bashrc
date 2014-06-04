@@ -86,6 +86,19 @@ ex ()
   fi
 }
 
+# cd - replace cd with pushd/popd
+function cd {
+  if (("$#" > 0)); then
+    if [ "$1" == "-" ]; then
+      popd > /dev/null
+    else
+      pushd "$@" > /dev/null
+    fi
+  else
+    cd $HOME
+  fi
+}
+
 . $HOME/.bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 
