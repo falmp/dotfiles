@@ -52,4 +52,5 @@
 	url = https://github.com/tpope/vim-ragtag.git
 [submodule ".vim/bundle/rooter"]
 	path = .vim/bundle/rooter
-	url = https://github.com/airblade/vim-rooter.git
+    url = https://github.com/airblade/vim-rooter.git
+    ignore = dirty
