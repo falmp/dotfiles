@@ -60,7 +60,7 @@ alias nl='nl -ba -w3 -s" "'
 
 # ffv - find file and vim edit
 ffv () {
-    vim -p $( ff $1 );
+  vim -p $( ff $1 );
 }
 
 # ex - archive extractor
@@ -87,7 +87,7 @@ ex ()
 }
 
 # cd - replace cd with pushd/popd
-function cd {
+function cd () {
   if (("$#" > 0)); then
     if [ "$1" == "-" ]; then
       popd > /dev/null
@@ -97,6 +97,11 @@ function cd {
   else
     cd $HOME
   fi
+}
+
+# mkdir - replace mkdir with mkdir && cd
+function mkdir () {
+  command mkdir -p "$@" && cd "$@";
 }
 
 . $HOME/.bin/git-prompt.sh
