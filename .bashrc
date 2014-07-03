@@ -97,6 +97,7 @@ function cd () {
   else
     cd $HOME
   fi
+  ls
 }
 
 # mkdir - replace mkdir with mkdir && cd
