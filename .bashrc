@@ -95,7 +95,7 @@ function cd () {
       pushd "$@" > /dev/null
     fi
   else
-    cd $HOME
+    pushd $HOME > /dev/null
   fi
   ls
 }
