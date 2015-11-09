@@ -1,0 +1,8 @@
+box: wercker-labs/docker
+
+deploy:
+  steps:
+    - script:
+        name: get app version
+        code: |
+          echo HELLO WORLD
