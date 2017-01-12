@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for dotfile in .bin .vim .bashrc .inputrc .face .gitconfig .subversion .colordiffrc
+for dotfile in .bin .vim .bashrc .inputrc .face .gitconfig .colordiffrc
 do
     ln -s -v -i ~/.dotfiles/${dotfile} ~
 done
