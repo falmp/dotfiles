@@ -16,6 +16,9 @@ shopt -s histappend      # append to history
 shopt -s hostcomplete    # autocomplete hostnames
 shopt -s nocaseglob      # case-insensitive in pathname expansion
 
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
