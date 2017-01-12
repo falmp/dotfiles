@@ -1,5 +1,9 @@
 # dotfiles
 
+## Font
+
+Download and install **[Monaco for Powerline](https://gist.github.com/baopham/1838072#file-monaco-for-powerline-otf)** font.
+
 ## Setup
 
 ```
