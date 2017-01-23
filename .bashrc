@@ -68,8 +68,7 @@ ffv () {
 }
 
 # ex - archive extractor
-ex ()
-{
+ex () {
   if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xjf $1   ;;
@@ -95,6 +94,8 @@ function cd () {
   if (("$#" > 0)); then
     if [ "$1" == "-" ]; then
       popd > /dev/null
+    elif [ "$1" == "-P" ]; then
+      pushd $(readlink -f "${@:2}") > /dev/null
     else
       pushd "$@" > /dev/null
     fi
