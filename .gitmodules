@@ -54,3 +54,6 @@
 	path = .vim/bundle/rooter
     url = https://github.com/airblade/vim-rooter.git
     ignore = dirty
+[submodule ".vim/bundle/typescript"]
+	path = .vim/bundle/typescript
+	url = https://github.com/leafgarland/typescript-vim.git
