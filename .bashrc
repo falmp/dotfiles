@@ -64,7 +64,7 @@ alias reload='source ~/.bashrc'
 
 # ffv - find file and vim edit
 ffv () {
-  vim -p $( ff $1 );
+  vim -p $(ff $1);
 }
 
 # ex - archive extractor
@@ -112,6 +112,9 @@ function mkdir () {
 
 . $HOME/.bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
+
+export DIRENV_LOG_FORMAT=
+eval "$(direnv hook bash)"
 
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset
