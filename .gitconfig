@@ -16,5 +16,6 @@
     who = shortlog -s --
     rv = checkout --
     ua = reset HEAD
+    uc = reset HEAD~1
 [core]
 	excludesfile = ~/.gitignore_global
