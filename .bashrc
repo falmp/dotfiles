@@ -14,6 +14,9 @@ shopt -s histappend      # append to history
 shopt -s hostcomplete    # autocomplete hostnames
 shopt -s nocaseglob      # case-insensitive in pathname expansion
 
+export LC_ALL=en_US.utf-8
+export LANG=en_US.utf-8
+
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
@@ -201,6 +204,4 @@ Hostname="\h"
 # prompt
 PS1="$BGreen$User@$Hostname $BBlue$PathShort$BRed"'$(__git_ps1 " [%s]")'"$Color_Off\$ "
 
-if [ -f $HOME/.bashrc.local ]; then
-    . $HOME/.bashrc.local
-fi
+[ -f $HOME/.bashrc.local ] && . $HOME/.bashrc.local
