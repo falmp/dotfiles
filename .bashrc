@@ -24,6 +24,7 @@ export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
 export HISTCONTROL=ignoreboth
 export PATH=$PATH:$HOME/.bin
+export PATH=/usr/local/sbin:$PATH
 export TERM=xterm-256color
 export EDITOR=vim
 export PAGER=less
