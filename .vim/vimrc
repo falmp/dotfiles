@@ -12,6 +12,7 @@ set pastetoggle=<F2>    " toggle between paste mode
 set cursorline          " highlight cursor line
 set title               " set filename on title
 "set list                " show white characters
+:set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
 set number              " use line numbers
 "set relativenumber      " use relative line numbers
