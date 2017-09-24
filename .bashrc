@@ -38,10 +38,10 @@ export LESS_TERMCAP_ue=$'\E[0m'          # end underline
 export LESS_TERMCAP_us=$'\E[01;32m'      # begin underline
 
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias lah='ls -lah --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias lart='ls -lart --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ll='ls -l'
+alias la='ll -a'
+alias lah='la -h'
+alias lart='la -rt'
 alias grep='grep --color=always -d skip'
 alias rgrep='grep -r'
 alias egrep='grep -E'
