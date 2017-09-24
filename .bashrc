@@ -65,6 +65,11 @@ alias xml='xmllint --format -'
 alias nl='nl -ba -w3 -s" "'
 alias reload='source ~/.bashrc'
 
+# calc - math calculation
+calc () {
+    bc -l <<< "$@"
+}
+
 # ffv - find file and vim edit
 ffv () {
   vim -p $(ff $1);
