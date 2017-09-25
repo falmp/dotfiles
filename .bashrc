@@ -54,7 +54,6 @@ alias free='free -m'                      # show sizes in MB
 alias less='less -R'
 alias ..='cd ..'
 alias cd..='cd ..'
-alias ff='find . -name'
 alias vi='vim'
 alias svn-incomming='svn diff -r BASE:HEAD --diff-cmd=meld'
 alias tcpflow-http='sudo tcpflow -C port 80 -i enp0s25 -e'
@@ -66,17 +65,22 @@ alias nl='nl -ba -w3 -s" "'
 alias reload='source ~/.bashrc'
 
 # calc - math calculation
-calc () {
+function calc () {
     bc -l <<< "$@"
 }
 
+# ff - find file
+function ff () {
+  find . -name "$1"
+}
+
 # ffv - find file and vim edit
-ffv () {
+function ffv () {
   vim -p $(ff $1);
 }
 
 # ex - archive extractor
-ex () {
+function ex () {
   if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xjf $1   ;;
