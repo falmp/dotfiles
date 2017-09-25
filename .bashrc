@@ -22,6 +22,7 @@ export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 
 export HISTSIZE=10000
 export HISTFILESIZE=${HISTSIZE}
+export HISTTIMEFORMAT="%d.%m.%y %T "
 export HISTCONTROL=ignoreboth
 export PATH=$PATH:$HOME/.bin
 export PATH=/usr/local/sbin:$PATH
