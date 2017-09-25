@@ -31,6 +31,8 @@ set hlsearch            " highlight searches
 set wrapscan            " wrap from bottom to top
 "set gdefault            " global substitution by default
 
+set nofixeol              " preserve missing EOL at end of file
+
 set foldlevel=1         " display class contents
 
 set showmatch           " show matching brackets
