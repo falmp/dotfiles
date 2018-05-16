@@ -46,7 +46,7 @@ alias lart='la -rt'
 alias grep='grep --color=always -d skip'
 alias rgrep='grep -r'
 alias egrep='grep -E'
-alias pgrep='pgrep -a'
+alias pgrep='pgrep -ail'
 alias hgrep='history | grep'
 alias cp='cp -i'                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
