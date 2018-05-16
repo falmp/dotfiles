@@ -6,10 +6,12 @@ Download and install **[Monaco for Powerline](https://gist.github.com/baopham/18
 
 ## Setup
 
+Download and install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install coreutils tree the_silver_searcher colordiff httpie direnv git bash-completion jq watch
-brew tap caskroom/cask
+brew install coreutils tree the_silver_searcher colordiff httpie direnv git bash-completion jq watch vim telnet wget
+brew cask install iterm2 spectacle caffeine spotify lastpass visual-studio-code # intellij-idea-ce odrive mysqlworkbench slack docker skype
 ```
 
 ## Installation:
