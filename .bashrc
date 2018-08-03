@@ -128,6 +128,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export DIRENV_LOG_FORMAT=
 eval "$(direnv hook bash)"
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # Reset
 Color_Off="\[\033[0m\]"       # Text Reset
 
