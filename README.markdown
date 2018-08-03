@@ -1,17 +1,30 @@
 # dotfiles
 
-## Font
-
-Download and install **[Monaco for Powerline](https://gist.github.com/baopham/1838072#file-monaco-for-powerline-otf)** font.
-
 ## Setup
-
-Download and install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install coreutils tree the_silver_searcher colordiff httpie direnv git bash-completion jq watch vim telnet wget
-brew cask install iterm2 spectacle caffeine spotify lastpass visual-studio-code # intellij-idea-ce odrive mysqlworkbench slack docker skype
+brew tap caskroom/versions
+brew install coreutils tree the_silver_searcher colordiff direnv git bash-completion jq watch vim telnet wget # httpie maven
+brew cask install iterm2 spectacle caffeine spotify visual-studio-code java8 google-chrome # intellij-idea odrive mysqlworkbench slack docker skype postman
+```
+
+## Mac App Store
+
+- [LastPass](https://itunes.apple.com/us/app/lastpass/id926036361?ls=1&mt=12)
+
+## Avatar
+
+```
+wget https://avatars.githubusercontent.com/falmp -O ~/falmp.jpg
+```
+
+## Font
+
+Download and install **[Monaco for Powerline](https://gist.github.com/baopham/1838072#file-monaco-for-powerline-otf)** font:
+
+```
+wget https://gist.githubusercontent.com/baopham/1838072/raw/Monaco%2520for%2520Powerline.otf -P ~/Library/Fonts
 ```
 
 ## Installation:
