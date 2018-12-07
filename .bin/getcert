@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if (( $# < 1 )); then
+  echo "Usage: getcert <host:port>"
+  exit 1
+fi
+
+HOST=$1
+
+openssl s_client -servername ${HOST%:*} -connect $HOST < /dev/null 2>&1 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p'

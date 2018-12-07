@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if (( $# < 1 )); then
+  echo "Usage: importert <host:port>"
+  exit 1
+fi
+
+CERT=$1
+
+sudo keytool -import -alias ${CERT%.*} -keystore $JAVA_HOME/jre/lib/security/cacerts -file $CERT
