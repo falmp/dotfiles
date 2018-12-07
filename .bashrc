@@ -48,6 +48,7 @@ alias rgrep='grep -r'
 alias egrep='grep -E'
 alias pgrep='pgrep -ail'
 alias hgrep='history | grep'
+alias portgrep='sudo lsof -i -n -P | grep TCP | grep'
 alias cp='cp -i'                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias du='du -h'                          # human-readable sizes, use du -s * to summarize by directory
