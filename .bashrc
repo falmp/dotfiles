@@ -64,6 +64,7 @@ alias json='python -m json.tool'
 alias xml='xmllint --format -'
 alias nl='nl -ba -w3 -s" "'
 alias reload='source ~/.bashrc'
+alias g='git'
 
 # calc - math calculation
 function calc () {

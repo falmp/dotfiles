@@ -5,6 +5,8 @@
     ci = commit
     br = branch
     co = checkout
+    n = checkout -b
+    cp = cherry-pick
     df = diff
     dc = diff --cached
     le = log -p
@@ -16,5 +18,9 @@
     rv = checkout --
     ua = reset HEAD
     uc = reset HEAD~1
+    stash = stash -u
+    amend = !git commit --amend
+	master = checkout master
+    finish = !git checkout master && git pull origin master && git checkout - && git rebase master
 [core]
 	excludesfile = ~/.gitignore_global
