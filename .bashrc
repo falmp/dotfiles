@@ -66,6 +66,15 @@ alias nl='nl -ba -w3 -s" "'
 alias reload='source ~/.bashrc'
 alias g='git'
 
+function b64 () {
+  echo -n "$@" | base64
+}
+
+function b64d () {
+  echo -n "$@" | base64 -d
+  echo
+}
+
 # calc - math calculation
 function calc () {
     bc -l <<< "$@"
