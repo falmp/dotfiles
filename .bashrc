@@ -90,6 +90,10 @@ function ffv () {
   vim -p $(ff $1);
 }
 
+function genpass () {
+  echo $(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c$1; echo)
+}
+
 # ex - archive extractor
 function ex () {
   if [ -f $1 ] ; then
