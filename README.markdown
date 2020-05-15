@@ -6,7 +6,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew tap caskroom/versions
 brew install coreutils tree the_silver_searcher colordiff direnv git bash-completion jq watch vim telnet wget httpie translate-shell # maven
-brew cask install iterm2 spectacle caffeine spotify visual-studio-code java8 google-chrome odrive aerial # intellij-idea slack docker skype postman postgres
+brew cask install iterm2 spectacle caffeine spotify visual-studio-code java8 google-chrome odrive aerial copyq # intellij-idea slack docker skype postman postgres
 ```
 
 ## Mac App Store
