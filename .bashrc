@@ -1,4 +1,4 @@
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+[ -r /usr/local/etc/profile.d/bash_completion.sh ] && . /usr/local/etc/profile.d/bash_completion.sh
 
 xhost +local:root > /dev/null 2>&1
 
@@ -38,6 +38,8 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'   # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'          # end underline
 export LESS_TERMCAP_us=$'\E[01;32m'      # begin underline
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l'
 alias la='ll -a'
@@ -64,6 +66,9 @@ alias json='python -m json.tool'
 alias xml='xmllint --format -'
 alias nl='nl -ba -w3 -s" "'
 alias reload='source ~/.bashrc'
+alias bashrc='vim ~/.bashrc'
+alias bashrcl='vim ~/.bashrc.local'
+alias vimrc='vim ~/.vim/vimrc'
 alias g='git'
 
 function b64 () {
