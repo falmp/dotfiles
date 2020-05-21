@@ -3,15 +3,31 @@
 ## Setup
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew tap caskroom/versions
-brew install coreutils tree the_silver_searcher colordiff direnv git bash-completion jq watch vim telnet wget httpie translate-shell # maven
-brew cask install iterm2 spectacle caffeine spotify visual-studio-code java8 google-chrome odrive aerial copyq # intellij-idea slack docker skype postman postgres
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew tap homebrew/cask-versions
+brew cask install iterm2 rectangle caffeine dozer spotify visual-studio-code openjdk google-chrome odrive aerial copyq # intellij-idea slack docker skype postman postgres telegram
+brew install coreutils tree the_silver_searcher colordiff direnv git bash-completion jq watch vim telnet wget httpie translate-shell # maven gnupg git-crypt awscli nvm
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 ```
 
-## Mac App Store
+### Different Java versions
 
-- [LastPass](https://itunes.apple.com/us/app/lastpass/id926036361?ls=1&mt=12)
+```
+brew install jenv
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8 adoptopenjdk11
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/
+```
+
+### Use Touch ID to authorize sudo on iTerm2
+
+1. Turn off `Preferences > Advanced > Allow sessions to survive logging out and back in.`
+2. Add this to the top of the /etc/pam.d/sudo file:
+    ```
+    auth       sufficient     pam_tid.so
+    ```
+3. Restart iTerm.
 
 ## Avatar
 
@@ -64,3 +80,7 @@ git add .
 git commit -m "Uninstall nerdtree"
 git push
 ```
+
+## TODO
+
+* For the next installation from scratch, get default state, apply preferred settings and get final state; try to automate these changes. See [this link](https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/).
