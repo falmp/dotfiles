@@ -24,3 +24,5 @@
     finish = !git checkout master && git pull origin master && git checkout - && git rebase master
 [core]
 	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = true
