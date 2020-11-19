@@ -18,6 +18,8 @@ brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8 adoptopenjdk11
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/
+jenv enable-plugin export
+jenv enable-plugin maven
 ```
 
 ### Use Touch ID to authorize sudo on iTerm2
