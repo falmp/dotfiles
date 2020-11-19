@@ -5,8 +5,8 @@
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew tap homebrew/cask-versions
-brew cask install iterm2 rectangle caffeine dozer spotify visual-studio-code openjdk google-chrome odrive aerial copyq # intellij-idea slack docker skype postman postgres telegram
-brew install coreutils tree the_silver_searcher colordiff direnv git bash-completion jq watch vim telnet wget httpie translate-shell # maven gnupg git-crypt awscli nvm
+brew cask install iterm2 rectangle caffeine dozer spotify visual-studio-code openjdk google-chrome odrive aerial bitwarden copyq # intellij-idea slack docker skype postman insomnia postgres telegram vlc dockstation
+brew install coreutils tree the_silver_searcher colordiff pygments direnv git bash-completion jq watch vim telnet wget httpie translate-shell # maven gnupg git-crypt awscli nvm kafkacat
 sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 ```
 
