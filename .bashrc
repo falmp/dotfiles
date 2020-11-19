@@ -48,7 +48,6 @@ alias lart='la -rt'
 alias grep='grep --color=always -d skip'
 alias rgrep='grep -r'
 alias egrep='grep -E'
-alias pgrep='pgrep -ail'
 alias hgrep='history | grep'
 alias portgrep='sudo lsof -i -n -P | grep TCP | grep'
 alias cp='cp -i'                          # confirm before overwriting something
@@ -70,6 +69,10 @@ alias bashrc='vim ~/.bashrc'
 alias bashrcl='vim ~/.bashrc.local'
 alias vimrc='vim ~/.vim/vimrc'
 alias g='git'
+
+function pgrep () {
+  command pgrep $1 | awk '{print $1}' | xargs ps -p
+}
 
 function b64 () {
   echo -n "$@" | base64
