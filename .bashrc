@@ -40,6 +40,8 @@ export LESS_TERMCAP_us=$'\E[01;32m'      # begin underline
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+export PROMPT_COMMAND='history -a' # flush commands to bash history immediately
+
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias ll='ls -l'
 alias la='ll -a'
